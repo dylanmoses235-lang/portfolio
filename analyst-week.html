@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Analyst Week: Junior Data Analyst Simulation — Dylan Moses</title>
-<meta name="description" content="Analyst Week simulation: a week of data analyst tickets for Goldcomb Goods, using Python, SQL, and Excel.">
+<meta name="description" content="Analyst Week simulation: a week of data analyst tickets for Goldcomb Goods, using SQL.">
 <style>
 :root{--ink:#1a2332;--muted:#5b6472;--line:#e4e8ee;--bg:#f7f9fb;--card:#ffffff;--accent:#0f6b5f;--accent-soft:#e6f2f0;--soon:#9a6b00;--soon-bg:#fdf3dd}
 *{box-sizing:border-box}
@@ -62,24 +62,27 @@ footer.site{padding:26px 0 34px;color:var(--muted);font-size:14px;border-top:1px
 <p><a href="index.html">← Back to home</a></p>
 <section class="project">
 <div class="card">
-<h3>Analyst Week: Junior Data Analyst Simulation</h3><img src="analyst-week-certificate.png" alt="Dylan Moses's Analyst Week certificate from Analyst Hive" style="width:100%;height:auto;display:block;border:1px solid #26303f;border-radius:8px;margin:14px 0 4px">
+<h3>Analyst Week: Junior Data Analyst Simulation</h3>
+<img src="analyst-week-certificate.png" alt="Dylan Moses's Analyst Week certificate from Analyst Hive" style="width:100%;height:auto;display:block;border:1px solid #26303f;border-radius:8px;margin:14px 0 4px">
 <p>Analyst Hive · Completed November 2026. Goldcomb Goods is a fictional company in a simulation — not employment. Performance review verdict: "Ready for week two."</p>
-<p>What I did: Over five days I worked a week of tickets as the junior analyst for Goldcomb Goods, a fictional e-commerce company. Each day was a realistic brief from a different colleague or client: questions to answer, messy data to sort, and a short written summary of what I found. I used Python, SQL, and Excel to build queries, clean messy data, and test assumptions. Then I presented my findings clearly and concisely in plain, professional language. I was given a realistic workload of 25 minutes per ticket, and this simulation taught me how to prioritise tasks, work quickly, and make the most of my time while building a portfolio of analysis.</p>
-<p>Why it matters: This simulation shows the practical side of data analysis. I did not just learn formulas; I handled unclear briefs, checked my own thinking, and explained results in a way that was accessible to clients.</p>
-<p>Tools / Data / Steps: Python, SQL, and Excel were used with a fictional Goldcomb Goods e-commerce dataset. I built queries and calculations in Python, SQL, and Excel to investigate the data, and tested assumptions in each tool to validate the findings. Key steps included using SQL to rank the top 10 Goldcomb Goods products by revenue in October, testing whether the top 3 products by revenue were also the most popular by units sold, and creating Excel formulas to summarise and test those rankings; using Python to analyse the effect of a promotion, determine the net sales after the promotion, and identify which of the four discounted products drove the most revenue; and calculating the share of returning customers by country, and the product category share of revenue for each country in 2025, to identify where each segment contributed.</p>
+<p>What I did: Over five days I worked a week of tickets as the junior analyst for Goldcomb Goods, a fictional e-commerce company. Each day brought a new question from a different stakeholder, and I had to figure out what the data actually said — not just run a query and hand back a number.</p>
+<p>Why it matters: The work caught a real data-quality problem and settled a disagreement between two departments, and it ended in a leadership briefing with clear recommendations.</p>
+<p>Tools / Data / Steps: Tools: SQL. Data: the company's orders, customers, and refunds data. Steps: define the question and the rules before counting; validate the data before trusting it; rebuild disputed numbers from raw data; present the findings as a short report with recommendations.</p>
 <h4>Key findings:</h4>
-<p>Defined the top 10 Goldcomb Goods products by revenue in October 2025, ranked by revenue, the first being the iPhone 14 Pro Max with $13,250.00 of revenue. The top 3 products by revenue were also the most popular by units sold, led by the iPhone 14 Pro Max, Google Pixel 8 Pro and MacBook Air M3.</p>
-<p>Found the promotion added $13,250.00 gross sales and $7,750.00 net sales after its $5,500.00 discount. The iPhone 14 Pro Max drove most of the promotion's revenue at $5,300.00 of the $13,250.00 gross sales.</p>
-<p>Found that 47.35% of Goldcomb Goods' customers were returning customers in 2025. The USA had the highest share of returning customers at 51.79%, followed by the UK at 46.15%, and Germany at 44.94%.</p>
-<p>Identified the highest-grossing and highest-net product category for each of the three countries in 2025, from the USA's Smartwatches and Health, the UK's Smartwatches and Health, and Germany's Laptop Accessories and Health. Smartphone Accessories contributed the highest revenue of any single category, with $299,482 gross and $258,721 net.</p>
-<p>Skills used: Python, SQL, Excel, analytical thinking, communication, time management, and attention to detail.</p>
-<p>Certificate: <a href="https://tools.analysthive.io/analyst-week/c/6jxmrhu4ml">Analyst Week certificate</a> — Credential ID 6JXMRHU4ML, issued by Analyst Hive.</p>
+<ol>
+<li>Defined what "active customer" meant before counting, excluding internal test accounts: 20,100 active customers.</li>
+<li>Caught a data quality problem: refunds looked spiked, but a system migration had logged refunds twice for the same orders, and the Drip-Free Glass Honey Dispenser was wrongly taking the blame.</li>
+<li>Reconciled two departments' conflicting September revenue numbers by rebuilding both from raw data: Sales reported $299,482 gross revenue before refunds, and Finance reported $258,721 net revenue after refunds — both were right; they measure different things.</li>
+<li>Briefed leadership with three findings: net revenue was $1.2m in May, up from $1.0m in April, with refunds at 2.1% of gross revenue; the Drip-Free Glass Honey Dispenser costs $30,000 a month, with 47% of its September revenue refunded — recommendation: fix the leaking lid; and revenue was shifting from honey to non-honey — honey fell from $1.1m in January to $0.5m in September while non-honey grew from $0.2m to $2.9m, and September net revenue was 84% non-honey.</li>
+</ol>
+<p>Skills: SQL, data cleaning, data validation, stakeholder communication.</p>
+<p><a href="https://tools.analysthive.io/analyst-week/c/6jxmrhu4ml">Analyst Week certificate — Credential ID 6JXMRHU4ML, issued by Analyst Hive.</a></p>
 <h4>Work samples:</h4>
-<figure class="thumb"><img src="analyst-week-day1.png" alt="Analyst Week Day 1 work sample: Excel workbook ranking the top 10 Goldcomb Goods products by revenue in October 2025, with the iPhone 14 Pro Max first at $13,250.00"><figcaption>Day 1: Excel workbook ranking the top 10 Goldcomb Goods products by revenue in October 2025, with the iPhone 14 Pro Max first at $13,250.00.</figcaption></figure>
-<figure class="thumb"><img src="analyst-week-day2.png" alt="Analyst Week Day 2 work sample: SQL query calculating the effect of the Goldcomb Goods promotion, with a $5,500.00 discount"><figcaption>Day 2: SQL query calculating the effect of the Goldcomb Goods promotion, with a $5,500.00 discount.</figcaption></figure>
-<figure class="thumb"><img src="analyst-week-day3.png" alt="Analyst Week Day 3 work sample: SQL query calculating the share of returning Goldcomb Goods customers in 2025, with the USA highest at 51.79%"><figcaption>Day 3: SQL query calculating the share of returning Goldcomb Goods customers in 2025, with the USA highest at 51.79%.</figcaption></figure>
-<figure class="thumb"><img src="analyst-week-day4.png" alt="Analyst Week Day 4 work sample: Python notebook calculating each product category's share of Goldcomb Goods revenue by country in 2025, with Smartphone Accessories highest at $299,482 gross and $258,721 net"><figcaption>Day 4: Python notebook calculating each product category's share of revenue by country, with Smartphone Accessories highest at $299,482 vs $266,789 vs $258,721 net.</figcaption></figure>
-<figure class="thumb"><img src="analyst-week-day5.png" alt="Analyst Week Day 5 work sample: Analysis of Goldcomb Goods' top 3 products by revenue and units sold in October 2025, showing that the iPhone 14 Pro Max, Google Pixel 8 Pro and MacBook Air M3 led on both measures"><figcaption>Day 5: Analysis of the top 3 Goldcomb Goods products by revenue and units sold, showing that the iPhone 14 Pro Max, Google Pixel 8 Pro and MacBook Air M3 led on both measures.</figcaption></figure>
+<figure class="thumb"><img src="analyst-week-day1.png" alt="Analyst Week Day 1 work sample"><figcaption>Day 1 — First ticket: how many customers? First count, 49,478 (later corrected).</figcaption></figure>
+<figure class="thumb"><img src="analyst-week-day2.png" alt="Analyst Week Day 2 work sample"><figcaption>Day 2 — The real customer count: 20,100 active customers.</figcaption></figure>
+<figure class="thumb"><img src="analyst-week-day3.png" alt="Analyst Week Day 3 work sample"><figcaption>Day 3 — The refund spike: 221 refunds in September, 55 orders refunded twice.</figcaption></figure>
+<figure class="thumb"><img src="analyst-week-day4.png" alt="Analyst Week Day 4 work sample"><figcaption>Day 4 — Reconciling Sales and Finance: $299,482 vs $266,789 vs $258,721 net.</figcaption></figure>
+<figure class="thumb"><img src="analyst-week-day5.png" alt="Analyst Week Day 5 work sample"><figcaption>Day 5 — First report: monthly net revenue, June–September 2026.</figcaption></figure>
 </div>
 </section>
 </div>
